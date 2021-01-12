@@ -18,5 +18,8 @@ class Classroom():
         print("Student Added Successfully")
 
     def ReadClassList(self):
+        print("Classroom")
         for student in self.classList:
-            print(student.getName())
+            print("- ", student.getName())
+        print("\n")
+    

@@ -10,10 +10,11 @@ menu.append("1. Add Student")
 menu.append("2. Delete Student")
 menu.append("3. Update Student")
 menu.append("4. Reset Classroom")
-menu.append("5. Crunch Numbers")
-menu.append("6. Save")
-menu.append("7. Load")
-menu.append("8. Exit")
+menu.append("5. Display Class")
+menu.append("6. Crunch Numbers")
+menu.append("7. Save")
+menu.append("8. Load")
+menu.append("9. Exit")
 
 runProgram = True
 while runProgram == True:
@@ -25,7 +26,6 @@ while runProgram == True:
     print("Option ", selection, " selected. \n")
     if selection == "1":
         myClass.addStudent()
-        print("Function one not yet implemented")
     elif selection == "2":
         print("Function two not yet implemented")
     elif selection == "3":
@@ -33,13 +33,15 @@ while runProgram == True:
     elif selection == "4":
         print("Function four not yet implemented")
     elif selection == "5":
-        print("Function five not yet implemented")
+        myClass.ReadClassList()
     elif selection == "6":
         print("Function six not yet implemented")
     elif selection == "7":
         print("function seven not yet implemented")
     elif selection == "8":
         print("Function eight not yet implemented")
+    elif selection == "9":
+        runProgram = False
 
 
 print("End of Program")
