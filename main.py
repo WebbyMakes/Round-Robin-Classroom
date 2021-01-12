@@ -21,33 +21,25 @@ while runProgram == True:
     for options in range(len(menu)):
         print(menu[options])
         
-    selection = input("Please Select a Menu item using keypad")
-    def one():
+    selection = input("Please Select a Menu item using keypad \n")
+    print("Option ", selection, " selected. \n")
+    if selection == "1":
         myClass.addStudent()
         print("Function one not yet implemented")
-    def two():
-        print("function two not yet implemented")
-    def three():
-        print("function three not yet implemented")
-    def four():
-        print("function four not yet implemented")
-    def five():
-        print("function five not yet implemented")
-    def six():
-        print("function six not yet implemented")
-    def seven():
+    elif selection == "2":
+        print("Function two not yet implemented")
+    elif selection == "3":
+        print("Function three not yet implemented")
+    elif selection == "4":
+        print("Function four not yet implemented")
+    elif selection == "5":
+        print("Function five not yet implemented")
+    elif selection == "6":
+        print("Function six not yet implemented")
+    elif selection == "7":
         print("function seven not yet implemented")
-    def eight():
-        print("function eight not yet implemented")
-
-    if selection == 1: one
-    elif selection == 2: two
-    elif selection == 3: three
-    elif selection == 4: four
-    elif selection == 5: five
-    elif selection == 6: six
-    elif selection == 7: seven
-    elif selection == 8: eight
+    elif selection == "8":
+        print("Function eight not yet implemented")
 
 
 print("End of Program")
