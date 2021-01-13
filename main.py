@@ -1,5 +1,6 @@
 from Classroom_Class import Classroom
 from Student_Class import Student
+#import os
 
 print("Please enter date of class")
 userinput = input()
@@ -18,6 +19,7 @@ menu.append("9. Exit")
 
 runProgram = True
 while runProgram == True:
+    #os.system('clear')
     print("Class size: ", len(Classroom.classList))
     for options in range(len(menu)):
         print(menu[options])
@@ -27,11 +29,11 @@ while runProgram == True:
     if selection == "1":
         myClass.addStudent()
     elif selection == "2":
-        print("Function two not yet implemented")
+        myClass.removeStudent()
     elif selection == "3":
         print("Function three not yet implemented")
     elif selection == "4":
-        print("Function four not yet implemented")
+        myClass.clearClassroom()
     elif selection == "5":
         myClass.ReadClassList()
     elif selection == "6":

@@ -17,9 +17,21 @@ class Classroom():
         #Print message is successful
         print("Student Added Successfully")
 
+    def removeStudent(self):
+        print("Class List")
+        x = 1
+        for stud in self.classList:
+            print(x, '. ', stud.getName())
+            x = x + 1
+        print("Please select which student to remove")
+        userInput = input()
+        del self.classList [int(userInput) - 1]
+
     def ReadClassList(self):
         print("Classroom")
         for student in self.classList:
             print("- ", student.getName())
         print("\n")
     
+    def clearClassroom(self):
+        self.classList.clear()
